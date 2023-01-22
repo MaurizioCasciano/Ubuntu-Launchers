@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=PyCharm
+Exec={{PYCHARM_HOME}}/bin/pycharm.sh
+Icon={{PYCHARM_HOME}}/bin/pycharm.png
+Comment=The Intelligent Python IDE
+Categories=Development;IDE;
+Terminal=false

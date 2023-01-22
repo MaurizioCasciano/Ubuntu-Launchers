@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=WebStorm
+Exec={{WEBSTORM_HOME}}/bin/webstorm.sh
+Icon={{WEBSTORM_HOME}}/bin/webstorm.png
+Type=Application
+Categories=Development;IDE;

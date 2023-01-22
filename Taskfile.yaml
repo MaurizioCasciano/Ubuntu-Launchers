@@ -1,0 +1,9 @@
+version: "3"
+
+env:
+  APPLICATIONS_PATH: "/usr/share/applications"
+
+tasks:
+  update-desktop-menu:
+    cmds:
+      - xdg-desktop-menu forceupdate

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=GoLand
+Exec={{GOLAND_HOME}}/bin/goland.sh
+Icon={{GOLAND_HOME}}/bin/goland.svg
+Type=Application
+Categories=Development;IDE;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec={{POSTMAN_HOME}}/app/Postman %U
+Icon={{POSTMAN_HOME}}/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
