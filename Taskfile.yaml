@@ -1,9 +1,24 @@
 version: "3"
 
+dotenv:
+  - ".env"
+
 env:
   APPLICATIONS_PATH: "/usr/share/applications"
 
 tasks:
+  intellij-idea:
+    aliases:
+      - idea
+    cmds:
+      - echo $IDEA_HOME
+      - export IDEA_HOME
+      - sudo cp apps/IntelliJ-IDEA.desktop $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
+      - sudo cat $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
+      - sudo -E envsubst < $APPLICATIONS_PATH/IntelliJ-IDEA.desktop > temp.desktop && sudo mv temp.desktop $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
+      - sudo cat $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
   update-desktop-menu:
+    aliases:
+      - update
     cmds:
       - xdg-desktop-menu forceupdate

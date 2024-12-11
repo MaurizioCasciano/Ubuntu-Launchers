@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Intellij Idea
-Exec={{IDEA_HOME}}/bin/idea.sh
-Icon={{IDEA_HOME}}/bin/idea.png
-Type=Application
-Categories=Development;IDE;
