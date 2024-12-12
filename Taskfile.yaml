@@ -7,6 +7,9 @@ env:
   APPLICATIONS_PATH: "/usr/share/applications"
 
 tasks:
+  ls:
+    cmds:
+    - ls -l $APPLICATIONS_PATH/
   intellij-idea:
     aliases:
       - idea
