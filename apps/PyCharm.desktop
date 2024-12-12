@@ -1,8 +1,11 @@
 [Desktop Entry]
+Version=1.0
 Type=Application
 Name=PyCharm
-Exec={{PYCHARM_HOME}}/bin/pycharm.sh
-Icon={{PYCHARM_HOME}}/bin/pycharm.png
-Comment=The Intelligent Python IDE
+Icon=${PYCHARM_HOME}/bin/pycharm.svg
+Exec="${PYCHARM_HOME}/bin/pycharm" %f
+Comment=Python IDE for Professional Developers
 Categories=Development;IDE;
 Terminal=false
+StartupWMClass=jetbrains-pycharm
+StartupNotify=true

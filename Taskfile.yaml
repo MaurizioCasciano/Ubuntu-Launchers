@@ -17,6 +17,16 @@ tasks:
       - sudo cat $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
       - sudo -E envsubst < $APPLICATIONS_PATH/IntelliJ-IDEA.desktop > temp.desktop && sudo mv temp.desktop $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
       - sudo cat $APPLICATIONS_PATH/IntelliJ-IDEA.desktop
+      - task: update
+  pycharm:
+    cmds:
+      - echo $PYCHARM_HOME
+      - export PYCHARM_HOME
+      - sudo cp apps/PyCharm.desktop $APPLICATIONS_PATH/PyCharm.desktop
+      - sudo cat $APPLICATIONS_PATH/PyCharm.desktop
+      - sudo -E envsubst < $APPLICATIONS_PATH/PyCharm.desktop > temp.desktop && sudo mv temp.desktop $APPLICATIONS_PATH/PyCharm.desktop
+      - sudo cat $APPLICATIONS_PATH/PyCharm.desktop
+      - task: update
   update-desktop-menu:
     aliases:
       - update
