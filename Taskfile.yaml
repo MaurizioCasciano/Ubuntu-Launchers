@@ -30,6 +30,15 @@ tasks:
       - sudo -E envsubst < $APPLICATIONS_PATH/PyCharm.desktop > temp.desktop && sudo mv temp.desktop $APPLICATIONS_PATH/PyCharm.desktop
       - sudo cat $APPLICATIONS_PATH/PyCharm.desktop
       - task: update
+  rust-rover:
+    cmds:
+      - echo $RUSTROVER_HOME
+      - export RUSTROVER_HOME
+      - sudo cp apps/RustRover.desktop $APPLICATIONS_PATH/RustRover.desktop
+      - sudo cat $APPLICATIONS_PATH/RustRover.desktop
+      - sudo -E envsubst < $APPLICATIONS_PATH/RustRover.desktop > temp.desktop && sudo mv temp.desktop $APPLICATIONS_PATH/RustRover.desktop
+      - sudo cat $APPLICATIONS_PATH/RustRover.desktop
+      - task: update
   update-desktop-menu:
     aliases:
       - update
